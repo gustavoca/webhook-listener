@@ -6,6 +6,7 @@ Right now we have the following topics:
 - ice
 - consolidated
 - agent
+- call
 
 ### acd
 Arrives when an inbound call gets into the queue, and will track the status of the call inside the call:
@@ -58,3 +59,9 @@ Example:
 - {"tenant":"Dev3","campaign-name":"Dev3Spanish","call-type-code":"5","call-type":"Inbound","agent-name":"Carl_Lewis","state-time":"2016-08-11T21:15:37.958Z","session-id":"SWIN3-STG_inbound_42593_5864033796_3","telephone-number":"1008","ice-queue":"Dev3SpanishQueue","state-code":"10","state":"Being offered a call","transaction-order":"23996387655069","trigger":"agent-data","clientId":"ee5e6d4e-096b-11e5-bfee-22000b2a3325","supervisor-name":"AnthonyDaniels","action":"agent-status","topic":"agent"}
 
 - {"tenant":"Dev3","campaign-name":"Dev3Spanish","call-type-code":"5","call-type":"Inbound","agent-name":"Carl_Lewis","state-time":"2016-08-11T21:15:38.044Z","session-id":"SWIN3-STG_inbound_42593_5864033796_3","telephone-number":"1008","ice-queue":"Dev3SpanishQueue","state-code":"6","state":"Talking","transaction-order":"23996511225347","trigger":"agent-data","clientId":"ee5e6d4e-096b-11e5-bfee-22000b2a3325","supervisor-name":"AnthonyDaniels","action":"agent-status","topic":"agent"}
+
+### call
+
+
+Example:
+- { "url": "http://acd1-stg.smrttouch.com:7777/", "format": "json", "tenant": "SecretTenant", "topic": "call", "enabled": true, "useCcm": true, "id": 120 } 
