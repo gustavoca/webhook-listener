@@ -49,7 +49,7 @@ Example:
 Outbound consolidated message:
 
 Example:
-- {"agentName":"Carl_Lewis", "campaignName":"Dev3Home","type":"Preview (Open Progressive)","clientId":"ee5e6d4e-096b-11e5-bfee-22000b2a3325","tenant":"TimeWarner","dnis":"1234567890","sessionId":"SI_0032_214435517320160901","transactionId":1164975507241861,"lifecycle":[{"action":"channel-preview","time":"2016-09-01T15:11:07.180Z"},{"action":"Waiting for call (reserved for specific call)","time":"2016-09-01T15:11:33.791Z"},{"action":"channel-talking","time":"2016-09-01T15:11:48.566Z"},{"action":"channel-wrap","time":"2016-09-01T15:11:58.070Z"},{"action":"channel-outcome","time":"2016-09-01T15:12:00.748Z","agentOutcome":"257","recordingPath":"http://59.123.88.45/recordings/F../sytel/rec/Dev3/dev/b8f3839f-acbb-4d48-a817-877a66c74d11.wav"}],"action":"consolidated-call","topic":"consolidated"}
+- {"agentName":"Carl_Lewis", "campaignName":"Dev3Home","type":"Preview (Open Progressive)","clientId":"ee5e6d4e-096b-11e5-bfee-22000b2a3325","tenant":"TimeWarner","dnis":"1234567890","sessionId":"SI_0032_214435517320160901","transactionId":1164975507241861,"lifecycle":[{"action":"channel-preview","time":"2016-09-01T15:11:07.180Z"},{"action":"Waiting for call (reserved for specific call)","time":"2016-09-01T15:11:33.791Z"},{"action":"channel-talking","time":"2016-09-01T15:11:48.566Z"},{"action":"channel-wrap","time":"2016-09-01T15:11:58.070Z"},{"action":"channel-outcome","time":"2016-09-01T15:12:00.748Z","agentOutcome":"257","recordingPath":"http://59.123.88.45/recordings/F../sytel/rec/Dev3/dev/b8f3839f-acbb-4d48-a817-877a66c74d11.wav"}], "action":"consolidated-call","topic":"consolidated"}
 
 ### agent
 Send messages related to the agent status change of every agent
