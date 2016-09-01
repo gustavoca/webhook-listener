@@ -45,7 +45,7 @@ Inbound consolidated message:
 
 Example:
 - {"uuid":"f1777aaa-5ffc-11e6-9c21-c779d9c0875b","ani":"+1004","dnis":"2628067463","type":"inbound","projectId":"13bdc142-34aa-11e6-9bda-0ee219ddbc75","clientId":"96147fb6-2f2b-11e6-a373-0ee219ddbc75","abandoned":"true","lifecycle":[{"action":"channel-create","time":"2016-08-11T19:51:07.132Z"},{"action":"channel-bridge","time":"2016-08-11T19:51:07.220Z","serverAddress":"52.20.57.149","serverName":"ivr-engine-dev","serverType":"ivr","ivrName":"ws_get_success"},{"action":"channel-unbridge","time":"2016-08-11T19:51:08.060Z","serverAddress":"52.20.57.149","serverName":"ivr-engine-dev","ivrName":"ws_get_success"},{"action":"channel-enqueue","time":"2016-08-11T19:51:08.135Z","skills":"DevSkill1","queueName":"successqueue"},{"action":"channel-bridge","time":"2016-08-11T19:51:08.126Z","serverAddress":"52.5.187.19","serverName":"acd-engine-dev","serverType":"acd"},{"action":"channel-hangup","time":"2016-08-11T19:51:23.031Z","hangupParty":"agent"}],"action":"consolidated-call","topic":"consolidated"}
-- 
+
 Outbound consolidated message:
 
 Example:
