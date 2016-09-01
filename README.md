@@ -39,10 +39,17 @@ Examples:
 - {"tenant":"Dev3","campaign-name":"Dev3Spanish","call-type-code":"5","call-type":"Inbound","agent-name":"Muhammad_Ali","state-time":"42593.882771","state-code":"2","state":"Logged in and not ACD available","transaction-order":"23729843954407","trigger":"agent-data","action":"ice","topic":"ice"}
 
 ### consolidated
-Send messages related to the full cycle of the call, from when it started to when it finished
+Send messages related to the full cycle of the call, from when it started to when it finished.
+
+Inbound consolidated message:
 
 Example:
 - {"uuid":"f1777aaa-5ffc-11e6-9c21-c779d9c0875b","ani":"+1004","dnis":"2628067463","type":"inbound","projectId":"13bdc142-34aa-11e6-9bda-0ee219ddbc75","clientId":"96147fb6-2f2b-11e6-a373-0ee219ddbc75","abandoned":"true","lifecycle":[{"action":"channel-create","time":"2016-08-11T19:51:07.132Z"},{"action":"channel-bridge","time":"2016-08-11T19:51:07.220Z","serverAddress":"52.20.57.149","serverName":"ivr-engine-dev","serverType":"ivr","ivrName":"ws_get_success"},{"action":"channel-unbridge","time":"2016-08-11T19:51:08.060Z","serverAddress":"52.20.57.149","serverName":"ivr-engine-dev","ivrName":"ws_get_success"},{"action":"channel-enqueue","time":"2016-08-11T19:51:08.135Z","skills":"DevSkill1","queueName":"successqueue"},{"action":"channel-bridge","time":"2016-08-11T19:51:08.126Z","serverAddress":"52.5.187.19","serverName":"acd-engine-dev","serverType":"acd"},{"action":"channel-hangup","time":"2016-08-11T19:51:23.031Z","hangupParty":"agent"}],"action":"consolidated-call","topic":"consolidated"}
+- 
+Outbound consolidated message:
+
+Example:
+- {"agentName":"Carl_Lewis", "campaignName":"Dev3Home","type":"Preview (Open Progressive)","clientId":"ee5e6d4e-096b-11e5-bfee-22000b2a3325","tenant":"TimeWarner","dnis":"1234567890","sessionId":"SI_0032_214435517320160901","transactionId":1164975507241861,"lifecycle":[{"action":"channel-preview","time":"2016-09-01T15:11:07.180Z"},{"action":"Waiting for call (reserved for specific call)","time":"2016-09-01T15:11:33.791Z"},{"action":"channel-talking","time":"2016-09-01T15:11:48.566Z"},{"action":"channel-wrap","time":"2016-09-01T15:11:58.070Z"},{"action":"channel-outcome","time":"2016-09-01T15:12:00.748Z","agentOutcome":"257","recordingPath":"http://59.123.88.45/recordings/F../sytel/rec/Dev3/dev/b8f3839f-acbb-4d48-a817-877a66c74d11.wav"}],"action":"consolidated-call","topic":"consolidated"}
 
 ### agent
 Send messages related to the agent status change of every agent
